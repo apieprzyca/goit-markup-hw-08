@@ -1,0 +1,20 @@
+.mobile-nav {
+  &__link {
+    color: getColor("elementary");
+    font-weight: 500;
+    font-size: 40px;
+    letter-spacing: 0.02em;
+    line-height: 1.2;
+    display: block;
+    margin-bottom: 32px;
+    transition: $transColor;
+    &:hover,
+    &:focus {
+      color: getColor("accent");
+    }
+    &--accent {
+      position: relative;
+      color: getColor("accent");
+    }
+  }
+}

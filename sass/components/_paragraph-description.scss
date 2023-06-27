@@ -28,3 +28,29 @@
     background-color: getColor("accentlight");
   }
 }
+@media #{$tablet} {
+  .paragraph {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    &__title {
+      max-width: 354px;
+    }
+    &__content {
+      max-width: 354px;
+    }
+  }
+}
+@media #{$desktop} {
+  .paragraph {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin-bottom: 94px;
+    &__title {
+      max-width: 270px;
+    }
+    &__content {
+      max-width: 270px;
+    }
+  }
+}

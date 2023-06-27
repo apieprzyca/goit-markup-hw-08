@@ -44,3 +44,30 @@
     }
   }
 }
+@media #{$tablet} {
+  .newsletter {
+    &__label {
+      max-width: 768px;
+    }
+  }
+}
+@media #{$desktop} {
+  .newsletter {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-top: 0;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 570px;
+    padding-bottom: 25px;
+    &__label {
+      max-width: 358px;
+      min-width: 358px;
+      margin-bottom: 0;
+    }
+    &__btn {
+      margin: 0;
+    }
+  }
+}

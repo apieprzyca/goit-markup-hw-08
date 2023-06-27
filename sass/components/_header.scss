@@ -1,13 +1,53 @@
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 26px;
+  padding-bottom: 26px;
   border-bottom: 1px solid #ececec;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 500;
   &__container {
     display: flex;
     align-items: center;
   }
-
-  &__logo {
-    margin-right: 93px;
+  &__menu-toggle {
+    margin-left: auto;
+    background-color: getColor("accentlight");
+    border: none;
+    cursor: pointer;
+    &-icon {
+      fill: getColor("accentdark");
+      transition: $transFill;
+      &:hover,
+      &:focus {
+        fill: getColor("accent");
+      }
+    }
+  }
+}
+@media #{$tablet} {
+  .header {
+    padding-top: 21px;
+    padding-bottom: 21px;
+    &__logo {
+      margin-right: 83px;
+    }
+    &__menu-toggle {
+      display: none;
+    }
+  }
+}
+@media #{$desktop} {
+  .header {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    &__logo {
+      margin-right: 93px;
+    }
+    &__menu-toggle {
+      display: none;
+    }
   }
 }

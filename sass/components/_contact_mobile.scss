@@ -1,0 +1,22 @@
+.contact-mobil {
+  margin-top: auto;
+  &__telephon {
+    color: getColor("secondary");
+    font-weight: 500;
+    font-size: 34px;
+    letter-spacing: 0.02em;
+    line-height: 1.2;
+    display: block;
+    margin-bottom: 32px;
+    transition: $transColor;
+    &:hover,
+    &:focus {
+      color: getColor("accent");
+    }
+  }
+  &__email {
+    @extend .contact-mobil__telephon;
+    font-size: 24px;
+    margin-bottom: 64px;
+  }
+}

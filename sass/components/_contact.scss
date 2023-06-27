@@ -1,43 +1,93 @@
 .contact {
-  display: flex;
-  width: 321px;
-  justify-content: space-between;
-  margin-left: auto;
-  align-items: center;
-
-  &__email {
+  display: none;
+}
+@media #{$tablet} {
+  .contact {
     display: flex;
+    flex-direction: column;
     width: 161px;
-    justify-content: space-between;
-    align-items: center;
-    &:hover,
-    &:focus {
-      .icon-envelope {
-        fill: getColor("accent");
+    margin-left: auto;
+
+    &__email {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &:hover,
+      &:focus {
+        .icon-envelope {
+          fill: getColor("accent");
+        }
+      }
+      &:hover,
+      &:focus {
+        .email {
+          color: getColor("accent");
+        }
       }
     }
-    &:hover,
-    &:focus {
-      .email {
-        color: getColor("accent");
+    &__telephon {
+      display: flex;
+      width: 130px;
+      margin-top: 10px;
+      justify-content: space-between;
+      align-items: center;
+      &:hover,
+      &:focus {
+        .icon-smartphon {
+          fill: getColor("accent");
+        }
+      }
+      &:hover,
+      &:focus {
+        .telephon {
+          color: getColor("accent");
+        }
       }
     }
   }
-  &__telephon {
+}
+@media #{$desktop} {
+  .contact {
     display: flex;
-    width: 130px;
+    width: 321px;
     justify-content: space-between;
+    margin-left: auto;
     align-items: center;
-    &:hover,
-    &:focus {
-      .icon-smartphon {
-        fill: getColor("accent");
+
+    &__email {
+      display: flex;
+      width: 161px;
+      justify-content: space-between;
+      align-items: center;
+      &:hover,
+      &:focus {
+        .icon-envelope {
+          fill: getColor("accent");
+        }
+      }
+      &:hover,
+      &:focus {
+        .email {
+          color: getColor("accent");
+        }
       }
     }
-    &:hover,
-    &:focus {
-      .telephon {
-        color: getColor("accent");
+    &__telephon {
+      display: flex;
+      width: 130px;
+      justify-content: space-between;
+      align-items: center;
+      &:hover,
+      &:focus {
+        .icon-smartphon {
+          fill: getColor("accent");
+        }
+      }
+      &:hover,
+      &:focus {
+        .telephon {
+          color: getColor("accent");
+        }
       }
     }
   }

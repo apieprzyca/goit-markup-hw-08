@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="pl">
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Studio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,7 +29,7 @@
     </style>
   </head>
 
-  <body>
+  <body class="body">
     <header class="header">
       <div class="container header__container">
         <a class="header__logo logo-main" href="index.html">
@@ -34,7 +37,8 @@
         >
         <nav>
           <menu class="navigation">
-           <a
+            <li>
+              <a
                 class="navigation__link navigation__link--accent"
                 href="index.html"
                 lang="pl"
@@ -53,9 +57,8 @@
             </li>
           </menu>
         </nav>
-          
 
-          <ul class="contact">
+        <ul class="contact">
           <li class="contact__email">
             <a href="mailto:info@devstudio.com"
               ><svg class="icon-envelope" width="16" height="12">
@@ -71,6 +74,15 @@
             ><a class="telephon" href="tel:+48111111111">+48 111 111 111</a>
           </li>
         </ul>
+        <button
+          class="header__menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="header__menu-toggle-icon" width="24" height="16">
+          <use href="images/menu.svg#icon-menu_icon"></use></svg>
+          </button>
+        </button>
       </div>
     </header>
 
@@ -84,7 +96,7 @@
         </button>
       </section>
 
-      <section class="paragraph">
+      <section class="paragraph section-tablet">
         <div class="container">
           <ul class="paragraph-list">
             <li class="paragraph-list__item">
@@ -153,8 +165,7 @@
               <img
                 src="./images/img1.jpg"
                 alt="close-up-image-programer-working-his-desk-office_1098-18707"
-                width="370"
-                height="294"
+                srcset="images/img1@2x.jpg 2x"
               />
               <p class="goals__description">Aplikacje komputerowe</p>
             </li>
@@ -162,8 +173,7 @@
               <img
                 src="./images/img2.jpg"
                 alt="web-ui-designers-are-developing-application-smartphones-team-creators-is-working-interface-mobile-phones_8119-2713"
-                width="370"
-                height="294"
+                srcset="images/img2@2x.jpg 2x"
               />
               <p class="goals__description">Aplikacje mobilne</p>
             </li>
@@ -171,8 +181,7 @@
               <img
                 src="./images/img3.jpg"
                 alt="creative-artist-web-design-with-working-colour-selection-graphic-tablet_35674-1119"
-                width="370"
-                height="294"
+                srcset="images/img3@2x.jpg 2x"
               />
               <p class="goals__description">Rozwiązania graficzne</p>
             </li>
@@ -190,8 +199,7 @@
                   class="team-member__item"
                   src="./images/img4.jpg"
                   alt="Uśmiechnięty Product Designer w koszuli bordo"
-                  width="270"
-                  height="260"
+                   srcset="images/img4@2x.jpg 2x"
                 />
                 <figcaption class="team-member__names">John Doe</figcaption>
                 <p class="team-member__description">Product Designer</p>
@@ -225,8 +233,7 @@
                   class="team-member__item"
                   src="./images/img5.jpg"
                   alt="Uśmiechnięta Front-End Developerka w okularach i czarnej marynarce"
-                  width="270"
-                  height="260"
+                   srcset="images/img5@2x.jpg 2x"
                 />
                 <figcaption class="team-member__names">John Doe</figcaption>
                 <p class="team-member__description">Front-end Developer</p>
@@ -260,8 +267,7 @@
                   class="team-member__item"
                   src="./images/img6.jpg"
                   alt="Uśmiechnięty marketer w niebieskiej koszuli"
-                  width="270"
-                  height="260"
+                   srcset="images/img6@2x.jpg 2x"
                 />
                 <figcaption class="team-member__names">John Doe</figcaption>
                 <p class="team-member__description">Marketing</p>
@@ -295,8 +301,7 @@
                   class="team-member__item"
                   src="./images/img7.jpg"
                   alt="Uśmiechnięty UI Designer w czarnym T-shircie"
-                  width="270"
-                  height="260"
+                   srcset="images/img7@2x.jpg 2x"
                 />
                 <figcaption class="team-member__names">John Doe</figcaption>
                 <p class="team-member__description">UI Designer</p>
@@ -328,45 +333,43 @@
         </div>
       </div>
       <div class="clients">
-      <div class="container">
-        <h2 class="section-title">Nasi klienci</h2>
-        <ul class="clients-list">
-          <li class="clients-list__item">
-            <svg class="clients-list__icon" width="106" height="60.04">
-              <use href="./images/icons.svg#icon-Logo-1"></use>
-            </svg>
-          </li>
-          <li class="clients-list__item">
-            <svg class="clients-list__icon" width="106" height="60.04">
-              <use href="./images/icons.svg#icon-Logo-2"></use>
-            </svg>
-          </li>
-          <li class="clients-list__item">
-            <svg class="clients-list__icon" width="106" height="60.04">
-              <use href="./images/icons.svg#icon-Logo-3"></use>
-            </svg>
-          </li>
-          <li class="clients-list__item">
-            <svg class="clients-list__icon" width="106" height="60.04">
-              <use href="./images/icons.svg#icon-Logo-4"></use>
-            </svg>
-          </li>
-          <li class="clients-list__item">
-            <svg class="clients-list__icon" width="106" height="60.04">
-              <use href="./images/icons.svg#icon-Logo-5"></use>
-            </svg>
-          </li>
-          <li class="clients-list__item">
-            <svg class="clients-list__icon" width="106" height="60.04">
-              <use href="./images/icons.svg#icon-Logo-6"></use>
-            </svg>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="section-title">Nasi klienci</h2>
+          <ul class="clients-list">
+            <li class="clients-list__item">
+              <svg class="clients-list__icon" width="106" height="60.04">
+                <use href="./images/icons.svg#icon-Logo-1"></use>
+              </svg>
+            </li>
+            <li class="clients-list__item">
+              <svg class="clients-list__icon" width="106" height="60.04">
+                <use href="./images/icons.svg#icon-Logo-2"></use>
+              </svg>
+            </li>
+            <li class="clients-list__item">
+              <svg class="clients-list__icon" width="106" height="60.04">
+                <use href="./images/icons.svg#icon-Logo-3"></use>
+              </svg>
+            </li>
+            <li class="clients-list__item">
+              <svg class="clients-list__icon" width="106" height="60.04">
+                <use href="./images/icons.svg#icon-Logo-4"></use>
+              </svg>
+            </li>
+            <li class="clients-list__item">
+              <svg class="clients-list__icon" width="106" height="60.04">
+                <use href="./images/icons.svg#icon-Logo-5"></use>
+              </svg>
+            </li>
+            <li class="clients-list__item">
+              <svg class="clients-list__icon" width="106" height="60.04">
+                <use href="./images/icons.svg#icon-Logo-6"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
     </main>
-
-    
 
     <footer class="footer">
       <div class="container footer__container">
@@ -429,6 +432,62 @@
         </form>
       </div>
     </footer>
+<div class="mobil-menu js-menu-container" id="mobile-menu">
+      <button class="mobil-menu__menu-toggle js-close-menu">
+        <svg class="mobil-menu__menu-toggle-icon" width="18.67" height="18.67">
+          <use href="images/clouse.svg#icon-close"></use>
+        </svg>
+      </button>
+      <menu class="mobile-nav">
+        <li>
+          <a
+            class="mobile-nav__link mobile-nav__link--accent"
+            href="index.html"
+            lang="pl"
+            >Agencja</a
+          >
+        </li>
+        <li>
+          <a class="mobile-nav__link" href="portfolio.html" lang="pl"
+            >Portfolio</a
+          >
+        </li>
+        <li>
+          <a class="mobile-nav__link" href="kontakt.html" lang="pl">Kontakt</a>
+        </li>
+      </menu>
+      <ul class="contact-mobil">
+        <li>
+          <a class="contact-mobil__telephon" href="tel:+48111111111"
+            >+48 111 111 111</a
+          >
+        </li>
+        <li>
+          <a class="contact-mobil__email" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li>
+          <ul class="socialmedia-mobil">
+            <li class="socialmedia-mobil__item">
+              <a class="socialmedia-mobil__link" href="">Instagram</a>
+            </li>
+            <li class="socialmedia-mobil__item">
+              <a class="socialmedia-mobil__link" href="">Twitter</a>
+            </li>
+            <li class="socialmedia-mobil__item">
+              <a class="socialmedia-mobil__link" href="">Facebook</a>
+            </li>
+            <li
+              class="socialmedia-mobil__item socialmedia-mobil__item--notborder"
+            >
+              <a class="socialmedia-mobil__link" href="">LinkedIn</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
     <div class="backdrop is-hidden" data-modal>
       <form class="order">
         <button class="order__btn-close" data-modal-close>

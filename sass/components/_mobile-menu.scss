@@ -1,0 +1,35 @@
+.mobil-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 600;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background-color: getColor("accentlight");
+  transform: translateX(100%);
+  transition: $transTransform;
+  &__menu-toggle {
+    position: absolute;
+    top: 21px;
+    right: 25.33px;
+    background-color: getColor("accentlight");
+    border: none;
+    cursor: pointer;
+    &-icon {
+      fill: getColor("accentdark");
+      transition: $transFill;
+      &:hover,
+      &:focus {
+        fill: getColor("accent");
+      }
+    }
+  }
+}
+.is-open {
+  transform: translateX(0);
+}

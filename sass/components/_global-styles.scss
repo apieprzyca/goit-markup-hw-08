@@ -14,10 +14,7 @@
   color: getColor("primary");
   letter-spacing: 0.03em;
 }
-.container {
-  width: 1200px;
-  margin: 0 auto;
-}
+
 h2 {
   font-weight: 700;
   font-size: $fontSizeL;
@@ -67,4 +64,25 @@ h2 {
 }
 main {
   background: getColor("accentlight");
+}
+.body {
+  font-family: $fontFamilyMain;
+  color: getColor("primary");
+}
+.container {
+  min-width: 320px;
+  max-width: 480px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media #{$tablet} {
+  .container {
+    max-width: 768px;
+  }
+}
+@media #{$desktop} {
+  .container {
+    max-width: 1200px;
+  }
 }

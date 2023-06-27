@@ -46,3 +46,18 @@
     justify-content: center;
   }
 }
+@media #{$tablet} {
+  .team-member {
+    max-width: 354px;
+    padding-bottom: 30px;
+  }
+}
+@media #{$desktop} {
+  .team-member {
+    max-width: 270px;
+    &__icons {
+      max-width: 100%;
+      justify-content: space-evenly;
+    }
+  }
+}

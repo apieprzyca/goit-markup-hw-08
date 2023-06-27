@@ -1,0 +1,24 @@
+/*.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media #{$tablet} {
+  .section {
+    &--tablet {
+      padding-bottom: 45px;
+    }
+  }
+}
+@media #{$desktop} {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    &__title {
+      margin-bottom: 50px;
+      font-size: $fontSizeXL;
+      &--none {
+        display: block;
+      }
+    }
+  }
+}

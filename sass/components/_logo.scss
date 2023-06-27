@@ -9,3 +9,8 @@
     color: getColor("accent");
   }
 }
+@media #{$desktop} {
+  .logo-main {
+    font-size: 26px;
+  }
+}

@@ -199,3 +199,26 @@
     }
   }
 }
+@media #{$tablet} {
+  .order {
+    position: relative;
+    min-width: 450px;
+    padding-left: 40px;
+    padding-right: 40px;
+    &__label-acceptance {
+      font-size: 12px;
+    }
+  }
+}
+@media #{$desktop} {
+  .order {
+    position: relative;
+    min-width: 528px;
+    min-height: 581px;
+    padding-left: 40px;
+    padding-right: 40px;
+    &__label-acceptance {
+      font-size: $fontSizeS;
+    }
+  }
+}

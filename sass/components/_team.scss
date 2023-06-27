@@ -10,6 +10,7 @@
   .team-list {
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: space-around;
     background-color: getColor("auxiliary");
   }
@@ -24,5 +25,20 @@
     border-bottom: 0px;
     border-width: 0px;
     border-top: 0px;
+  }
+}
+@media #{$tablet} {
+  .team {
+    max-width: 354px;
+    padding-bottom: 30px;
+  }
+}
+@media #{$desktop} {
+  .team {
+    max-width: 270px;
+    &__icons {
+      max-width: 100%;
+      justify-content: space-evenly;
+    }
   }
 }

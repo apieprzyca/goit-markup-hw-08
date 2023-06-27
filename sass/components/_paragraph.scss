@@ -34,3 +34,29 @@
     }
   }
 }
+@media #{$tablet} {
+  .paragraph {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    &__logo {
+      max-width: 354px;
+    }
+    &__text {
+      max-width: 354px;
+    }
+  }
+}
+@media #{$desktop} {
+  .paragraph {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin-bottom: 94px;
+    &__logo {
+      max-width: 270px;
+    }
+    &__text {
+      max-width: 270px;
+    }
+  }
+}
