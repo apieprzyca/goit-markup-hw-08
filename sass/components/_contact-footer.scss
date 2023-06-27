@@ -1,0 +1,12 @@
+.email-footer {
+  @extend .email;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  &:hover,
+  &:focus {
+    color: getColor("accent");
+  }
+}
+.telephon-footer {
+  @extend .email-footer;
+}

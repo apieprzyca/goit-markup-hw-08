@@ -1,0 +1,37 @@
+.teamcard-socials {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+
+  &__image {
+    fill: #afb1b8;
+    transition: $transFill;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    &:focus,
+    &:hover {
+      fill: getColor("accentlight");
+    }
+  }
+
+  &__item {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    padding-left: 12px;
+    padding-top: 12px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      fill: getColor("accentlight");
+      background-color: getColor("accent");
+    }
+  }
+}

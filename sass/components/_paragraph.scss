@@ -1,0 +1,36 @@
+.paragraph {
+  padding: 94px 0px 94px 0px;
+  background-color: getColor("accentlight");
+  margin: 0 auto;
+
+  .paragraph-list {
+    display: flex;
+    padding-bottom: 94px;
+    justify-content: space-around;
+    background-color: getColor("accentlight");
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding: 0;
+    gap: 40px;
+
+    &__item {
+      width: 270px;
+      height: 120px;
+      border: 1px solid getColor("auxiliary");
+      border-radius: 4px;
+      padding-left: 100px;
+      padding-top: 25px;
+      background: getColor("auxiliary");
+
+      &:hover,
+      &:focus {
+        &__icon:hover,
+        &__icon:focus {
+          fill: getColor("accent");
+        }
+        border: 1px solid getColor("accent");
+      }
+    }
+  }
+}

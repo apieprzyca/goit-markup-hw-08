@@ -1,0 +1,43 @@
+.clients-list {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  padding-top: 26px;
+  display: flex;
+  gap: 36px;
+  padding-bottom: 94px;
+
+  &__item {
+    width: 170px;
+    height: 92px;
+    border: 1px solid getColor("strangesecond");
+    fill: getColor("strangesecond");
+    border-radius: 4px;
+    cursor: pointer;
+    padding-left: 32px;
+    padding-top: 17.71px;
+
+    &:hover,
+    &:focus {
+      fill: getColor("accent");
+      border: 1px solid getColor("accent");
+    }
+  }
+
+  &__icon {
+    fill: getColor("strangesecond");
+    display: flex;
+    justify-content: center;
+
+    &:hover,
+    &:focus {
+      fill: getColor("accent");
+
+      &__item:hover,
+      &__item:focus {
+        border: 1px solid getColor("accent");
+      }
+    }
+  }
+}

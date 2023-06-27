@@ -1,0 +1,33 @@
+.footer {
+  background: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  &__container {
+    display: flex;
+  }
+  &__contacts {
+    margin-right: 70px;
+  }
+  &__address {
+    margin-top: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: $fontSizeS;
+    color: getColor("accentlight");
+    letter-spacing: 0.03em;
+    line-height: 1.2;
+  }
+  &__links {
+    margin-top: 9px;
+  }
+  &__invitation {
+    margin-bottom: 20px;
+    margin-top: 12px;
+    font-weight: 700;
+    font-size: $fontSizeS;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: getColor("accentlight");
+  }
+}

@@ -1,0 +1,56 @@
+.goals {
+  background-color: getColor("accentlight");
+  display: flex;
+  gap: 45px;
+
+  &__description {
+    position: absolute;
+    top: 224px;
+    margin: 0;
+    font-size: $fontSizeXS;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: getColor("accentlight");
+    width: 100%;
+    padding-top: 27px;
+    height: 70px;
+    background-color: getColor("strangeone");
+  }
+
+  .goals-title {
+    font-weight: 700;
+    font-size: $fontSizeL;
+    line-height: 1, 17;
+    color: getColor("elementary");
+    background-color: getColor("accentlight");
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  &__item {
+    position: relative;
+  }
+  &__title {
+    position: absolute;
+    top: 224px;
+    margin: 0;
+    font-size: $fontSizeS;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: getColor("accentLight");
+    width: 100%;
+    padding-top: 27px;
+    height: 70px;
+    background-color: getColor("strangeone");
+  }
+  .goals-list {
+    display: flex;
+    background-color: getColor("accentLight");
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 50px;
+  }
+}

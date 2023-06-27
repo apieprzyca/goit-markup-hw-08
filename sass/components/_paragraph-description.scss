@@ -1,0 +1,30 @@
+.paragraph-description {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  display: flex;
+  gap: 40px;
+
+  &__title {
+    font-weight: 700;
+    font-size: $fontSizeXS;
+    line-height: 1, 14;
+    color: getColor("elementary");
+    text-transform: uppercase;
+    background-color: getColor("accentlight");
+    letter-spacing: 0.03em;
+    margin-top: 0;
+    padding-bottom: 10px;
+  }
+  &__content {
+    line-height: 1.71;
+    padding-top: 10px;
+    font-size: $fontSizeXS;
+    color: getColor("secondary");
+    width: 270px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    background-color: getColor("accentlight");
+  }
+}

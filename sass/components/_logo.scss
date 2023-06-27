@@ -1,0 +1,11 @@
+.logo-main {
+  font-family: $fontFamilyLogo;
+  font-size: 26px;
+  font-weight: 700;
+  color: getColor("accentdark");
+  letter-spacing: 0.03em;
+  line-height: 1.2;
+  &--accent {
+    color: getColor("accent");
+  }
+}

@@ -1,0 +1,70 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0px;
+  border: 0px;
+}
+
+.body {
+  font-family: $fontFamilyMain;
+  color: getColor("primary");
+  letter-spacing: 0.03em;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+h2 {
+  font-weight: 700;
+  font-size: $fontSizeL;
+  text-align: center;
+  padding-bottom: 50px;
+  padding-top: 94px;
+}
+img {
+  margin: 0;
+  border: 0;
+  border-bottom: 0px;
+  border-top: 0px;
+  border-style: none;
+}
+figure {
+  margin: 0;
+  border-bottom: 0px;
+  border-top: 0px;
+  border: none;
+  border-width: 0px;
+}
+figcaption {
+  margin: 0;
+  border-top: 0px;
+  border-style: none;
+}
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+section {
+  background-color: getColor("accentlight");
+}
+header {
+  background-color: getColor("accentlight");
+  margin: 0 auto;
+  border-bottom: 1px;
+}
+ul {
+  list-style-type: none;
+}
+h2 {
+  font-weight: 700;
+  font-size: $fontSizeL;
+  text-align: center;
+  padding-bottom: 50px;
+}
+main {
+  background: getColor("accentlight");
+}
