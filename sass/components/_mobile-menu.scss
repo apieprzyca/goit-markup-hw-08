@@ -1,4 +1,4 @@
-.mobil-menu {
+.mobile-menu {
   position: fixed;
   top: 0;
   left: 0;
@@ -23,6 +23,7 @@
     &-icon {
       fill: getColor("accentdark");
       transition: $transFill;
+
       &:hover,
       &:focus {
         fill: getColor("accent");

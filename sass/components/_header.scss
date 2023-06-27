@@ -18,6 +18,7 @@
     border: none;
     cursor: pointer;
     &-icon {
+      width: 40px;
       fill: getColor("accentdark");
       transition: $transFill;
       &:hover,

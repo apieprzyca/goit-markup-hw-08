@@ -80,7 +80,7 @@
           aria-controls="mobile-menu"
         >
           <svg class="header__menu-toggle-icon" width="24" height="16">
-          <use href="images/menu.svg#icon-menu_icon"></use></svg>
+          <use href="images/icons.svg#icon-menu_icon"></use></svg>
           </button>
         </button>
       </div>
@@ -432,28 +432,28 @@
         </form>
       </div>
     </footer>
-<div class="mobil-menu js-menu-container" id="mobile-menu">
-      <button class="mobil-menu__menu-toggle js-close-menu">
-        <svg class="mobil-menu__menu-toggle-icon" width="18.67" height="18.67">
-          <use href="images/clouse.svg#icon-close"></use>
+<div class="mobile-menu js-menu-container" id="mobile-menu">
+      <button class="mobile-menu__menu-toggle js-close-menu">
+        <svg class="mobile-menu__menu-toggle-icon" width="18.67" height="18.67">
+          <use href="images/icons.svg#icon-close"></use>
         </svg>
       </button>
-      <menu class="mobile-nav">
+      <menu class="mobile-navi">
         <li>
           <a
-            class="mobile-nav__link mobile-nav__link--accent"
+            class="mobile-navi__link mobile-nav__link--accent"
             href="index.html"
             lang="pl"
             >Agencja</a
           >
         </li>
         <li>
-          <a class="mobile-nav__link" href="portfolio.html" lang="pl"
+          <a class="mobile-navi__link" href="portfolio.html" lang="pl"
             >Portfolio</a
           >
         </li>
         <li>
-          <a class="mobile-nav__link" href="kontakt.html" lang="pl">Kontakt</a>
+          <a class="mobile-navi__link" href="kontakt.html" lang="pl">Kontakt</a>
         </li>
       </menu>
       <ul class="contact-mobil">
@@ -468,20 +468,20 @@
           >
         </li>
         <li>
-          <ul class="socialmedia-mobil">
-            <li class="socialmedia-mobil__item">
-              <a class="socialmedia-mobil__link" href="">Instagram</a>
+          <ul class="socialmedia-mobile">
+            <li class="socialmedia-mobile__item">
+              <a class="socialmedia-mobile__link" href="">Instagram</a>
             </li>
-            <li class="socialmedia-mobil__item">
-              <a class="socialmedia-mobil__link" href="">Twitter</a>
+            <li class="socialmedia-mobile__item">
+              <a class="socialmedia-mobile__link" href="">Twitter</a>
             </li>
-            <li class="socialmedia-mobil__item">
-              <a class="socialmedia-mobil__link" href="">Facebook</a>
+            <li class="socialmedia-mobile__item">
+              <a class="socialmedia-mobile__link" href="">Facebook</a>
             </li>
             <li
-              class="socialmedia-mobil__item socialmedia-mobil__item--notborder"
+              class="socialmedia-mobile__item socialmedia-mobile__item--notborder"
             >
-              <a class="socialmedia-mobil__link" href="">LinkedIn</a>
+              <a class="socialmedia-mobile__link" href="">LinkedIn</a>
             </li>
           </ul>
         </li>
@@ -555,6 +555,13 @@
         <button type="submit" class="order__btn btn" lang="pl">Wyślij</button>
       </form>
     </div>
+     <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
