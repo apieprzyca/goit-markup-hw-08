@@ -1,5 +1,7 @@
-.contact-mobil {
+.contact-mobile {
   margin-top: auto;
+  display: flex;
+  flex-direction: column;
   &__telephon {
     color: getColor("secondary");
     font-weight: 500;
@@ -15,7 +17,7 @@
     }
   }
   &__email {
-    @extend .contact-mobil__telephon;
+    @extend .contact-mobile__telephon;
     font-size: 24px;
     margin-bottom: 64px;
   }

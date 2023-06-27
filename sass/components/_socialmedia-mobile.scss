@@ -1,6 +1,10 @@
 .socialmedia-mobile {
   display: flex;
+  
+
   &__item {
+    display: flex;
+
     padding-left: 10px;
     padding-right: 10px;
     border-right: 1px solid rgba(33, 33, 33, 0.2);
@@ -9,7 +13,8 @@
     }
   }
   &__link {
-    color: getColor("secondary");
+    display: flex;
+    color: getColor("accent");
     font-weight: 500;
     font-size: $fontSizeM;
     letter-spacing: 0.02em;
