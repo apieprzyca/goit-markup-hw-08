@@ -11,7 +11,7 @@
 
 .body {
   font-family: $fontFamilyMain;
-  color: getColor("primary");
+  color: getColor("elementary");
   letter-spacing: 0.03em;
 }
 
@@ -65,10 +65,7 @@ h2 {
 main {
   background: getColor("accentlight");
 }
-.body {
-  font-family: $fontFamilyMain;
-  color: getColor("primary");
-}
+
 .container {
   min-width: 320px;
   max-width: 480px;

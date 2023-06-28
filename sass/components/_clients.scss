@@ -5,7 +5,10 @@
   padding: 0;
   padding-top: 26px;
   display: flex;
-  gap: 36px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
   padding-bottom: 94px;
 
   &__item {
@@ -41,6 +44,12 @@
     }
   }
 }
+@media #{$desktop} {
+  .clients-logos {
+    flex-wrap: nowrap;
+  }
+}
+
 @media #{$desktop} {
   .clients-logos {
     flex-wrap: nowrap;

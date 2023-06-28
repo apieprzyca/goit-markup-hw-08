@@ -1,44 +1,23 @@
 .team {
   background-color: getColor("auxiliary");
-  padding-top: 100px;
+}
+.team-list {
   display: flex;
   flex-direction: column;
-  padding: 0 auto;
-  padding-bottom: 94px;
+  gap: 30px;
   margin: 0 auto;
-
-  .team-list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    background-color: getColor("auxiliary");
-  }
-  &__item {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: getColor("auxiliary");
-    padding-bottom: 94px;
-    border-radius: 0px 0px 4px 4px;
-    margin: 0;
-    border-bottom: 0px;
-    border-width: 0px;
-    border-top: 0px;
-  }
 }
 @media #{$tablet} {
-  .team {
-    max-width: 354px;
-    padding-bottom: 30px;
+  .team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
   }
 }
 @media #{$desktop} {
-  .team {
-    max-width: 270px;
-    &__icons {
-      max-width: 100%;
-      justify-content: space-evenly;
-    }
+  .team-list {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin: 0 auto;
   }
 }

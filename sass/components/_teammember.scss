@@ -1,22 +1,23 @@
 .team-member {
   background-color: getColor("accentlight");
-  margin: 0;
+  margin: 0 auto;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   padding-bottom: 30px;
+  align-items: center;
+  justify-content: center;
 
   &__item {
     display: block;
+    align-items: center;
+    justify-content: center;
     border: 0px;
     border-bottom: 0px;
     border-top: 0px;
     border-width: 0px;
     border-style: none;
-    margin: 0;
-    border-bottom-width: 0px;
-    border-style: none;
-    border-bottom: 0px;
+    margin: 0 auto;
   }
 
   &__names {
@@ -31,7 +32,6 @@
     line-height: 1, 19;
     color: getColor("elementary");
     background-color: getColor("accentlight");
-    padding: 30px 0px 0px 0px;
   }
   &__description {
     font-size: $fontSizeXS;
@@ -44,20 +44,5 @@
     margin-bottom: 0;
     display: flex;
     justify-content: center;
-  }
-}
-@media #{$tablet} {
-  .team-member {
-    max-width: 354px;
-    padding-bottom: 30px;
-  }
-}
-@media #{$desktop} {
-  .team-member {
-    max-width: 270px;
-    &__icons {
-      max-width: 100%;
-      justify-content: space-evenly;
-    }
   }
 }

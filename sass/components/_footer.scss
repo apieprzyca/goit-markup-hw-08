@@ -4,9 +4,11 @@
   padding-bottom: 60px;
   &__container {
     display: flex;
+    flex-direction: column;
+    text-align: center;
   }
   &__contacts {
-    margin-right: 70px;
+    margin-bottom: 60px;
   }
   &__address {
     margin-top: 20px;
@@ -35,7 +37,7 @@
   .footer {
     &__container-contacts {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-evenly;
     }
     &__contacts {
       margin-bottom: 0;

@@ -2,6 +2,7 @@
   list-style: none;
   margin-top: 0;
   margin-bottom: 0;
+  margin: auto;
   padding: 0;
   display: flex;
   justify-content: space-around;
@@ -11,7 +12,9 @@
     transition: $transFill;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    gap: 34px;
+    justify-content: space-evenly;
+    margin: auto;
     &:focus,
     &:hover {
       fill: getColor("accentlight");
@@ -19,8 +22,8 @@
   }
 
   &__item {
-    width: 44px;
-    height: 44px;
+    max-width: 450px;
+    gap: 34px;
     border-radius: 50%;
     background-color: transparent;
     cursor: pointer;

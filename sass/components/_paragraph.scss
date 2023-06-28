@@ -1,62 +1,185 @@
 .paragraph {
-  padding: 94px 0px 94px 0px;
+  padding: 94px 94px;
+  padding-bottom: 20px;
   background-color: getColor("accentlight");
   margin: 0 auto;
+  display: flex;
+  gap: 30px;
+}
 
-  .paragraph-list {
+.paragraph-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-bottom: 94px;
+  justify-content: space-between;
+  background-color: getColor("accentlight");
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding: 0;
+
+  &__item {
+    border: 1px solid getColor("auxiliary");
+    border-radius: 4px;
     display: flex;
-    padding-bottom: 94px;
-    justify-content: space-around;
-    background-color: getColor("accentlight");
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin: auto;
+    background: getColor("auxiliary");
+    &:hover,
+    &:focus {
+      border: 1px solid getColor("accent");
+    }
+  }
+  &__icon {
+    margin: auto;
+    &:hover,
+    &:focus {
+      fill: getColor("accent");
+    }
+  }
+
+  &__title {
     list-style: none;
-    margin-top: 0;
-    margin-bottom: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0 auto;
+    padding-top: 20px;
     padding: 0;
-    gap: 40px;
+    font-weight: 700;
+    font-size: $fontSizeXS;
+    line-height: 1, 14;
+    color: getColor("elementary");
+    text-transform: uppercase;
+    background-color: getColor("accentlight");
+    letter-spacing: 0.03em;
+    margin-top: 0;
+    padding-bottom: 10px;
 
-    &__item {
-      width: 270px;
-      height: 120px;
-      border: 1px solid getColor("auxiliary");
-      border-radius: 4px;
-      padding-left: 100px;
-      padding-top: 25px;
-      background: getColor("auxiliary");
-
-      &:hover,
-      &:focus {
-        &__icon:hover,
-        &__icon:focus {
-          fill: getColor("accent");
-        }
-        border: 1px solid getColor("accent");
-      }
+    &__content {
+      line-height: 1.71;
+      display: flex;
+      position: relative;
+      padding-top: 10px;
+      font-size: $fontSizeXS;
+      color: getColor("secondary");
+      align-items: center;
+      font-weight: 400;
+      letter-spacing: 0.03em;
+      background-color: getColor("accentlight");
     }
   }
 }
+
 @media #{$tablet} {
-  .paragraph {
+  .paragraph-list {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 30px;
-    &__logo {
+    &__item {
       max-width: 354px;
     }
-    &__text {
+    &__icon {
+      max-width: 354px;
+    }
+    &__title {
+      max-width: 354px;
+    }
+    &__content {
       max-width: 354px;
     }
   }
 }
 @media #{$desktop} {
-  .paragraph {
+  .paragraph-list {
     flex-wrap: nowrap;
     flex-direction: row;
     margin-bottom: 94px;
-    &__logo {
+    gap: 30px;
+    &__item {
       max-width: 270px;
     }
-    &__text {
+    &__icon {
+      max-width: 270px;
+    }
+    &__title {
+      max-width: 270px;
+    }
+    &__content {
       max-width: 270px;
     }
   }
 }
+
+/*
+.paragraph-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  &__item {
+    display: flex;
+    height: 120px;
+    border-radius: 4px;
+    background: getColor("auxiliary");
+  }
+  &__icon {
+    margin: auto;
+  }
+  &__title {
+    margin-bottom: 10px;
+    margin-top: 30px;
+    font-size: $fontSizeS;
+    letter-spacing: 0.03em;
+    line-height: 1.1;
+  }
+  &__content {
+    font-size: $fontSizeS;
+    letter-spacing: 0.03em;
+    line-height: 1.7;
+    color: getColor("secondary");
+  }
+}
+@media #{$tablet} {
+  .paragraph-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    &__item {
+      max-width: 354px;
+    }
+    &__icon {
+      max-width: 354px;
+    }
+    &__title {
+      max-width: 354px;
+    }
+    &__content {
+      max-width: 354px;
+    }
+  }
+}
+@media #{$desktop} {
+  .paragraph-list {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin-bottom: 94px;
+    &__item {
+      max-width: 270px;
+    }
+    &__icon {
+      max-width: 270px;
+    }
+    &__title {
+      max-width: 270px;
+    }
+    &__content {
+      max-width: 270px;
+    }
+  }
+}
+*/

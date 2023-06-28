@@ -1,28 +1,26 @@
 .background {
-  background-color: #2f303a;
+  text-align: center;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  max-width: 480px;
+  min-width: 320px;
+  margin: 0 auto;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/img-background.jpg);
-  max-width: 1600px;
-  text-align: center;
-  margin: 0 auto;
+
+  background-size: cover;
+  background-position: 50% 50%;
 
   &__title {
-    font-weight: 900;
-    font-size: $fontSizeXL;
-    letter-spacing: 0.06em;
-    color: getColor("accentlight");
     margin-bottom: 30px;
-    max-width: 692px;
-    padding-top: 200px;
-    padding-left: 0px;
-    padding-right: 0px;
-    line-height: 1.36;
-    text-align: center;
-    text-transform: uppercase;
-    margin: 0 auto;
+    font-weight: 900;
+    font-size: 26px;
+    letter-spacing: 0.06em;
+    line-height: 1.4;
+    color: getColor("accentlight");
   }
 
   &__button {
@@ -31,9 +29,9 @@
     font-weight: 700;
     font-size: $fontSizeS;
     line-height: 1.875;
-    width: 200px;
+    max-width: 200px;
     padding: 10px 0;
-    margin: 30px 700px 200px 700px;
+    margin: 30px 118px;
     letter-spacing: 0.06em;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -51,17 +49,17 @@
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .title-section {
+  .background {
     background-image: url("../images/img-background@2x.jpg");
   }
 }
 @media #{$tablet} {
-  .title-section {
+  .background {
     max-width: 768px;
   }
 }
 @media #{$desktop} {
-  .title-section {
+  .background {
     padding-top: 200px;
     padding-bottom: 200px;
     max-width: 1600px;
