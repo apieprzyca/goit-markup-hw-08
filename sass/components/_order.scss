@@ -168,7 +168,8 @@
     .link-accept {
       color: getColor("accent");
       text-decoration: underline;
-      display: inline-block;
+      display: flex;
+      flex-direction: row;
       margin-right: 5px;
       margin-left: 5px;
     }
@@ -177,6 +178,10 @@
     display: block;
     visibility: hidden;
     transition: $transVisibility;
+  }
+  &__text {
+    display: flex;
+    flex-direction: row;
   }
   .order__checkbox {
     &--hidden {
@@ -218,7 +223,10 @@
     padding-left: 40px;
     padding-right: 40px;
     &__label-acceptance {
-      font-size: $fontSizeS;
+      font-size: $fontSizeXS;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 }
