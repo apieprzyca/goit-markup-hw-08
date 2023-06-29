@@ -2,34 +2,70 @@
   padding: 94px 0px 94px 0px;
   background-color: getColor("accentlight");
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .paragraph-list {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin: 0 auto;
   gap: 30px;
   &__item {
     display: flex;
-    height: 120px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     border-radius: 4px;
-    background: getColor("auxiliary");
+    background-color: getColor("auxiliary");
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 190px;
+    padding-left: 190px;
+
+    &:hover,
+    &:focus {
+      border: 1px solid getColor("accent");
+    }
+
+    &__icon {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      margin-top: 25px;
+      margin-bottom: 25px;
+      padding-right: 190px;
+      padding-left: 190px;
+      justify-content: center;
+      align-items: center;
+    }
   }
-  &__icon {
-    margin: auto;
-  }
+
   &__title {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 10px;
     margin-top: 30px;
     font-size: $fontSizeS;
     letter-spacing: 0.03em;
     line-height: 1.1;
+    background-color: getColor("accentlight");
   }
+
   &__content {
-    font-size: $fontSizeS;
+    display: flex;
+    flex-direction: column;
+    font-size: $fontSizeXS;
     letter-spacing: 0.03em;
     line-height: 1.7;
     color: getColor("secondary");
+    background-color: getColor("accentlight");
   }
 }
 @media #{$tablet} {
@@ -39,6 +75,13 @@
     gap: 30px;
     &__item {
       max-width: 354px;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      padding-right: 142px;
+      padding-left: 142px;
+    }
+    &__title {
+      max-width: 270px;
     }
     &__content {
       max-width: 354px;
@@ -50,9 +93,14 @@
   .paragraph-list {
     flex-wrap: nowrap;
     flex-direction: row;
+    justify-content: space-between;
     margin-bottom: 94px;
     &__item {
       max-width: 270px;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      padding-right: 100px;
+      padding-left: 100px;
     }
     &__content {
       max-width: 270px;
