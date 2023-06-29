@@ -1,13 +1,26 @@
 .team {
   background-color: getColor("auxiliary");
+  margin: 0 auto;
+  padding: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .team-list {
   display: flex;
   flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 30px;
   margin: 0 auto;
 }
 @media #{$tablet} {
+  .team {
+    margin: 0 auto;
+  }
   .team-list {
     flex-direction: row;
     flex-wrap: wrap;
