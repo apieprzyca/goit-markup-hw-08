@@ -82,28 +82,55 @@
 
 @media #{$desktop} {
   .footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+
     &__container {
-      display: flex;
-      flex-direction: column;
-      justify-content: left;
-      margin: 0 auto;
-    }
-    &__contacts {
-      margin-right: 70px;
-      justify-content: flex-start;
-      align-items: left;
+      flex-direction: row;
+      font-size: $fontSizeXS;
+      justify-content: baseline;
+      justify-items: left;
     }
     &__address {
-      margin-top: 20px;
+      font-size: $fontSizeXS;
+      justify-items: left;
+      display: grid;
     }
     &__links {
-      margin-top: 9px;
+      font-size: $fontSizeXS;
+      justify-items: left;
+      display: grid;
+    }
+
+    &__container-contacts {
+      flex-direction: column;
+      display: grid;
+      justify-items: left;
+      justify-content: left;
+      font-size: $fontSizeXS;
     }
     &__invitation {
-      margin-bottom: 20px;
-      margin-top: 12px;
+      padding-top: 0;
+      margin-top: 0;
     }
+  }
+  .join {
+    display: flex;
+    padding-top: 0;
+    margin-top: 0;
+    justify-content: center;
+    padding-right: 90px;
+    padding-left: 70px;
+  }
+  .newsletter {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-right: 0;
+    padding-top: 0;
+    font-size: $fontSizeXS;
   }
 }
