@@ -5,12 +5,17 @@
   &__container {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    align-items: center;
   }
   &__contacts {
-    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   &__address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 20px;
     font-style: normal;
     font-weight: 400;
@@ -20,11 +25,18 @@
     line-height: 1.2;
   }
   &__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 9px;
   }
   &__invitation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 20px;
     margin-top: 12px;
+    padding-top: 60px;
     font-weight: 700;
     font-size: $fontSizeS;
     line-height: 1.15;
@@ -35,30 +47,63 @@
 }
 @media #{$tablet} {
   .footer {
-    &__container-contacts {
+    &__container {
       display: flex;
-      justify-content: space-evenly;
+      flex-direction: row;
+      justify-content: baseline;
+      flex-wrap: wrap;
     }
     &__contacts {
-      margin-bottom: 0;
+      justify-items: left;
+      justify-content: flex-start;
+      margin: 0 auto;
+    }
+    &__invitation {
+      padding-top: 0;
     }
   }
+
+  .join {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    flex-wrap: nowrap;
+  }
+
+  .newsletter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin: 0 auto;
+  }
 }
+
 @media #{$desktop} {
   .footer {
     padding-top: 60px;
     padding-bottom: 60px;
     &__container {
       display: flex;
-      flex-direction: row;
-      text-align: left;
-    }
-    &__container-contacts {
-      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      margin: 0 auto;
     }
     &__contacts {
       margin-right: 70px;
-      margin-bottom: 0;
+      justify-content: flex-start;
+      align-items: left;
+    }
+    &__address {
+      margin-top: 20px;
+    }
+    &__links {
+      margin-top: 9px;
+    }
+    &__invitation {
+      margin-bottom: 20px;
+      margin-top: 12px;
     }
   }
 }

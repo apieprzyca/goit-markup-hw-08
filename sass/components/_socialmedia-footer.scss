@@ -1,19 +1,18 @@
 .icons-footer {
   list-style: none;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 0;
+  margin: 0 auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   gap: 10px;
 
   &__item {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    margin-left: 0;
     cursor: pointer;
-    padding-left: 12px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
     padding-top: 12px;
     background-color: rgba(255, 255, 255, 0.1);
     &:hover,
@@ -22,6 +21,9 @@
     }
   }
   &__image {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
     fill: getColor("accentlight");
     &:hover,
     &:focus {

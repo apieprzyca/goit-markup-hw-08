@@ -6,32 +6,30 @@
 
 .paragraph-list {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  margin: 0 auto;
   gap: 30px;
   &__item {
     display: flex;
     height: 120px;
     border-radius: 4px;
     background: getColor("auxiliary");
-    &__icon {
-      margin: auto;
-    }
   }
-
+  &__icon {
+    margin: auto;
+  }
   &__title {
     margin-bottom: 10px;
     margin-top: 30px;
     font-size: $fontSizeS;
     letter-spacing: 0.03em;
     line-height: 1.1;
-    background: getColor("accentlight");
-    &__content {
-      font-size: $fontSizeS;
-      letter-spacing: 0.03em;
-      line-height: 1.7;
-      color: getColor("secondary");
-      background: getColor("accentlight");
-    }
+  }
+  &__content {
+    font-size: $fontSizeS;
+    letter-spacing: 0.03em;
+    line-height: 1.7;
+    color: getColor("secondary");
   }
 }
 @media #{$tablet} {
@@ -47,6 +45,7 @@
     }
   }
 }
+
 @media #{$desktop} {
   .paragraph-list {
     flex-wrap: nowrap;

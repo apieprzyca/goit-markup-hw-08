@@ -1,4 +1,5 @@
 .logo-main-footer {
   @extend .logo-main;
   color: getColor("accentlight");
+  text-align: center;
 }
