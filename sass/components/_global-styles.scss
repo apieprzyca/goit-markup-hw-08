@@ -4,15 +4,14 @@
   box-sizing: border-box;
 }
 * {
-  margin: 0;
+  margin: 0px;
   padding: 0px;
   border: 0px;
 }
 
-.body {
+body {
   font-family: $fontFamilyMain;
   color: getColor("elementary");
-  letter-spacing: 0.03em;
 }
 
 h2 {
@@ -70,6 +69,8 @@ main {
   min-width: 320px;
   max-width: 480px;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 @media #{$tablet} {
   .container {
