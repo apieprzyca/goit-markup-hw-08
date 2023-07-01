@@ -1,5 +1,6 @@
 .mobile-menu {
   position: fixed;
+  overflow-x: hidden;
   top: 0;
   left: 0;
   z-index: 600;
@@ -9,6 +10,7 @@
   flex-direction: column;
   margin: 0 auto;
   padding-left: 40px;
+  padding-right: 40px;
   padding-top: 48px;
   padding-bottom: 48px;
   background-color: getColor("accentlight");

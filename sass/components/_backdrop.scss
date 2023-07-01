@@ -12,6 +12,7 @@
   opacity: 1;
   transform: scale(1);
   transition: $transVisibility, $transOpacity, $transTransform;
+  overflow-x: hidden;
 }
 .is-hidden {
   visibility: hidden;

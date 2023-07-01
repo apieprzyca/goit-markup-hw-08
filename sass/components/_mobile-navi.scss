@@ -1,4 +1,5 @@
 .mobile-navi {
+  overflow-x: hidden;
   &__link {
     color: getColor("elementary");
     font-weight: 500;

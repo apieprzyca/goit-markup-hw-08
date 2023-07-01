@@ -1,18 +1,19 @@
 .newsletter {
   display: flex;
+  overflow-x: hidden;
   flex-direction: column;
   align-items: center;
   margin-left: 0 auto;
   justify-content: space-between;
   align-items: flex-end;
-  width: 570px;
+  max-width: 570px;
   padding-bottom: 25px;
   padding-top: 40px;
 
   &__input {
     display: flex;
     align-items: center;
-    width: 358px;
+    max-width: 358px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
@@ -69,7 +70,7 @@
     margin-top: 0;
     justify-content: space-between;
     align-items: flex-end;
-    width: 570px;
+    max-width: 570px;
     padding-bottom: 25px;
     &__label {
       max-width: 358px;
